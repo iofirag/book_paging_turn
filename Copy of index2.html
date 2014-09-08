@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- imports -->
+
+		<!-- js-->
+		<script src="includes2/js/jquery-1.8.3.min.js"></script>
+		<!-- <script src="includes2/js/turn.min.js"></script> -->
+		<script src="includes2/js/index.js"></script>
+		<script src="includes2/js/angular.min.js"></script>   <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"</script> -->
+		<script src="includes2/js/book.js"></script>
+		
+
+		<link rel="stylesheet" href="includes2/css/index.css">
+		<title>Book-Paging</title>
+
+
+	</head>
+	<body ng-app="book">
+		<div id="flipbook" ng-controller="bookController">
+			<section>{{bookController.pages}}</section>
+			<p>d{{bookController.pages}}</p>
+			<section class="hard"> Turn.js </section>
+			<section class="hard"></section>
+			
+			<section> Page 2 </section>
+			<section> Page 3 </section>
+			<section id="last">
+				 <input type="button" value="+ Add page" onclick="bookCont.addPage();"/>
+			</section>
+			<section class="hard"></section>
+			<section class="hard"></section>
+		</div>
+		<!-- <script type="text/javascript">
+			$("#flipbook").turn({
+				width: 400,
+				height: 300,
+				autoCenter: true
+			});
+		</script> -->
+		
+			
+		
+	</body>
+	
+</html>
