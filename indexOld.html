@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- imports -->
+
+		<!-- js-->
+		
+		<script type="text/javascript" src="includesOld/js/jquery-1.8.3.min.js"></script>
+
+		<!-- api of turn.js -->
+		<script src="includesOld/js/turn.min.js"></script>
+		
+		<script src="includesOld/js/index.js"></script>
+		<!-- css -->
+		<!-- <link rel="stylesheet" href="includes/css/html5reset-1.6.1.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/default.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/docs.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/html5.css"> -->
+
+		<link rel="stylesheet" href="includesOld/css/index.css">
+
+		<!-- <link rel="stylesheet" href="includes/css/jquery.ui.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/magazine1.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/magazine2.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/magazine3.css"> -->
+		<!-- <link rel="stylesheet" href="includes/css/steve-jobs.css"> -->
+		<title>Book-Paging</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			
+			<!-- <div class="bookshelf">
+				<div class="shelf">
+					<div class="row-1">
+						<div class="loc">
+							<div> <div class="sample thumb1" sample="steve-jobs"></div> </div>
+							<div> <div class="sample thumb2" sample="html5"></div> </div>
+							<div> <div class="sample thumb3" sample="docs"></div> </div>
+						</div>
+					</div>
+					<div class="row-2">
+						<div class="loc">
+							<div> <div class="sample thumb4" sample="magazine1"></div> </div>
+							<div> <div class="sample thumb5" sample="magazine2"></div> </div>
+							<div> <div class="sample thumb6" sample="magazine3"></div> </div>
+						</div>
+					</div>
+				</div>
+				<div class="suggestion">↑ Click a book or magazine to see turn.js in action</div>
+			</div> -->
+			
+			<div id="flipbook">
+				<div class="animate"> <img src="includesOld/images/01.jpg"/> </div>
+				<div class="animate"> <img src="includesOld/images/02.jpg"/></div>
+				<div> <img src="includesOld/images/03.jpg"/> </div>
+				<div> <img src="includesOld/images/04.jpg"/> </div>
+				<div class="animate"> <img src="includesOld/images/05.jpg"/> </div>
+				<div class="animate"> <img src="includesOld/images/06.jpg"/> </div>
+			</div>
+		</div>
+		
+		
+		<!-- <div class="samples">
+		<div class="bar">
+			
+			<a class="icon quit"></a>
+		</div>
+		<div id="book-wrapper">
+			<div id="book-zoom" style="visibility: visible;" class="animate"><div class="mag1-transform magazine2 animated" style="position: relative; width: 924px; height: 600px; margin-left: -231px;"><div ignore="1" class="next-button" style="display: block;"></div> <div ignore="1" class="previous-button" style="display: none;"></div><div style="pointer-events: none; position: absolute; top: -100px; left: 50px; overflow: visible; z-index: auto; display: block;"><div style="position: absolute; top: 100px; left: 181px; overflow: hidden; z-index: 0; width: 757px; height: 757px; -webkit-transform-origin: 100% 100%; -webkit-transform: translate(-295px, -157px) rotate(90deg); display: none;"><div style="position: absolute; top: auto; left: auto; overflow: visible; z-index: auto; cursor: default; width: 462px; height: 600px; right: 0px; bottom: 0px; -webkit-transform-origin: 100% 100%; -webkit-transform: rotate(-90deg) translate(462px, 0px) rotate(360deg);"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; background-image: -webkit-gradient(linear, 100% 100%, 0% 100%, color-stop(0.78355, rgba(0, 0, 0, 0)), color-stop(0.95671, rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0)));"></div></div></div><div style="position: absolute; top: 100px; left: 181px; overflow: hidden; z-index: 0; width: 757px; height: 757px; -webkit-transform-origin: 100% 100%; -webkit-transform: translate(-295px, -157px) rotate(90deg); display: none;"><div style="position: absolute; top: auto; left: auto; overflow: visible; z-index: auto; cursor: default; width: 462px; height: 600px; right: 0px; bottom: 0px; -webkit-transform-origin: 100% 100%; -webkit-transform: rotate(-90deg) translate(462px, 0px) rotate(360deg);"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; background-image: -webkit-gradient(linear, 100% 100%, 0% 100%, color-stop(0.78355, rgba(0, 0, 0, 0)), color-stop(0.95671, rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0)));"></div></div></div><div style="position: absolute; top: 100px; left: 643px; overflow: hidden; z-index: 0; width: 757px; height: 757px; -webkit-transform-origin: 0% 0%; -webkit-transform: translate(462px, 0px) rotate(90deg); display: none;"><div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 462px; height: 600px; right: 0px; bottom: auto; -webkit-transform-origin: 0% 0%; -webkit-transform: rotate(-90deg) translate(0px, 0px) rotate(360deg);"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; background-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(0, 0, 0, 0)), color-stop(0.8, rgba(0, 0, 0, 0.2)), to(rgba(255, 255, 255, 0.2)));"></div></div></div><div style="position: absolute; top: 100px; left: -50px; overflow: hidden; z-index: 0; display: none; width: 757px; height: 757px;"><div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 462px; height: 600px;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px;"></div></div></div><div style="position: absolute; top: 100px; left: 412px; overflow: hidden; z-index: 0; display: none; width: 757px; height: 757px;"><div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 462px; height: 600px;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px;"></div></div></div><div style="position: absolute; top: 100px; left: 412px; overflow: hidden; z-index: 24; width: 757px; height: 757px; -webkit-transform-origin: 0% 0%; -webkit-transform: translate(206px, -206px) rotate(45deg); display: block;"><div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: auto; cursor: default; width: 462px; height: 600px; right: 0px; bottom: auto; -webkit-transform-origin: 0% 0%; -webkit-transform: rotate(-45deg) translate(206px, 256px) rotate(270deg);"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; background-image: -webkit-gradient(linear, 0% 0%, 5.41125541125541% 4.166666666666666%, from(rgba(0, 0, 0, 0)), color-stop(0.8, rgba(0, 0, 0, 0.2)), to(rgba(255, 255, 255, 0.2)));"></div><div class="page p2 even" style="float: left; width: 462px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto; box-shadow: rgba(0, 0, 0, 0.0823529) 0px 0px 20px; -webkit-transform-origin: 100% 0%;"><div class="gradient"></div><img src="samples/magazine2/pages/2.jpg" style="width: 100%; height: 100%;"></div></div></div></div><div class="shadow" style="position: absolute; top: 0px; left: 462px; overflow: hidden; z-index: auto; width: 462px; height: 600px;"></div><div class="page-wrapper" page="6" style="position: absolute; overflow: hidden; width: 462px; height: 600px; top: 0px; left: 0px; right: auto; z-index: 0; display: none;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 757px; height: 757px; -webkit-transform-origin: 100% 100%;"><div class="page p6 even" style="float: left; width: 462px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto; box-shadow: rgba(0, 0, 0, 0.333333) 0px 0px 20px; -webkit-transform-origin: 100% 100%;"><div class="gradient"></div><img src="samples/magazine2/pages/6.jpg" style="width: 100%; height: 100%;"></div></div><div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; display: none; background-image: -webkit-gradient(linear, 0% 100%, 120% 100%, color-stop(0.6, rgba(0, 0, 0, 0)), color-stop(0.8, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));"></div></div><div class="page-wrapper" page="4" style="position: absolute; overflow: hidden; width: 462px; height: 600px; top: 0px; left: 0px; right: auto; z-index: 0; display: none;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 757px; height: 757px; -webkit-transform-origin: 100% 100%;"><div class="page p4 even" style="float: left; width: 462px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto; box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px; -webkit-transform-origin: 100% 100%;"><div class="gradient"></div><img src="samples/magazine2/pages/4.jpg" style="width: 100%; height: 100%;"></div></div><div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; display: none; background-image: -webkit-gradient(linear, 0% 100%, 120% 100%, color-stop(0.6, rgba(0, 0, 0, 0)), color-stop(0.8, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));"></div></div><div class="page-wrapper" page="5" style="position: absolute; overflow: hidden; width: 462px; height: 600px; top: 0px; right: 0px; left: auto; z-index: 0; display: none;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 757px; height: 757px; -webkit-transform-origin: 0% 0%;"><div class="page p5 odd" style="float: left; width: 462px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto; -webkit-transform-origin: 0% 0%; box-shadow: rgba(0, 0, 0, 0.352941) 0px 0px 20px;"><div class="gradient"></div><img src="samples/magazine2/pages/5.jpg" style="width: 100%; height: 100%;"></div></div><div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; display: none; background-image: -webkit-gradient(linear, 100% 0%, 100% 0%, color-stop(0.6, rgba(0, 0, 0, 0)), color-stop(0.8, rgba(0, 0, 0, 0.298039)), to(rgba(0, 0, 0, 0)));"></div></div><div class="page-wrapper" page="2" style="position: absolute; overflow: hidden; width: 462px; height: 600px; top: 0px; left: 0px; right: auto; z-index: 0;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 757px; height: 757px;"></div></div><div class="page-wrapper" page="3" style="position: absolute; overflow: hidden; width: 462px; height: 600px; top: 0px; right: 0px; left: auto; z-index: 0;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 757px; height: 757px;"><div class="page p3 odd" style="float: left; width: 462px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto; -webkit-transform-origin: 0% 0%; box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;"><div class="gradient"></div><img src="samples/magazine2/pages/3.jpg" style="width: 100%; height: 100%;"></div></div><div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px;"></div></div><div class="page-wrapper" page="1" style="position: absolute; overflow: hidden; width: 462px; height: 600px; top: 0px; right: 0px; left: auto; z-index: 12;"><div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 757px; height: 757px; -webkit-transform-origin: 0% 0%; -webkit-transform: translate(205px, -206px) rotate(45deg);"><div class="page p1 odd" style="float: left; width: 462px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: 0px; -webkit-transform-origin: 0% 0%; box-shadow: rgba(0, 0, 0, 0) 0px 0px 20px; -webkit-transform: rotate(-45deg) translate(-205px, 206px);"><div class="gradient"></div><img src="samples/magazine2/pages/1.jpg" style="width: 100%; height: 100%;"></div></div><div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 462px; height: 600px; display: block; background-image: -webkit-gradient(linear, 100% 0%, 93.50649350649351% 4.999999999999999%, color-stop(0.6, rgba(0, 0, 0, 0)), color-stop(0.8, rgba(0, 0, 0, 0.298039)), to(rgba(0, 0, 0, 0)));"></div></div></div></div>
+		</div>
+		<div id="slider-bar" class="turnjs-slider">
+			<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><a class="ui-slider-handle ui-state-default ui-corner-all ui-state-focus" style="left: 0%; z-index: -1;"><div class="thumbnail" style="width: 130px; height: 88px; top: -103px; left: -25px;"><div style="width: 115px; height: 73px; background-image: url(http://www.turnjs.com/samples/magazine2/pics/preview.jpg); background-position: 0px -219px;"></div></div></a></div>
+		</div> -->
+		
+		
+		
+	</body>
+</html>
